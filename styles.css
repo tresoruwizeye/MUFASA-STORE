@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: Arial;
-  padding-bottom: 1000px;
 }
 P {
   margin: 0;
@@ -178,4 +177,47 @@ header {
 }
 .classic-items img {
   width: 130px;
+}
+
+.location {
+  margin: 20px 50px 0 50px;
+  display: flex;
+  gap: 50px;
+}
+.location img {
+  width: 500px;
+  height: 250px;
+}
+.location-description h2 {
+  max-width: 250px;
+}
+.location-description h5 {
+  color: #0c552b;
+}
+.location-description p {
+  max-width: 300px;
+}
+
+.footer {
+  background-color: #1e663c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 50px;
+  gap: 20px;
+}
+
+.icon img {
+  width: 20px;
+}
+.icon {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
 }
