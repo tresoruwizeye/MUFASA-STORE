@@ -6,6 +6,10 @@ P {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -33,6 +37,9 @@ header {
   gap: 20px;
   margin-right: 20px;
   font-size: 18 px;
+}
+#nav a {
+  color: #0c552b;
 }
 .nav:hover,
 .nav:focus-visible {
@@ -208,6 +215,9 @@ header {
   padding: 10px 50px;
   gap: 20px;
 }
+.footer img {
+  cursor: pointer;
+}
 
 .icon img {
   width: 20px;
@@ -216,8 +226,4 @@ header {
   display: flex;
   gap: 10px;
   margin: 10px 0;
-}
-a {
-  color: #fff;
-  text-decoration: none;
 }
