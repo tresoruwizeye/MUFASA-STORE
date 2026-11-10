@@ -1,9 +1,21 @@
 body {
   margin: 0;
   font-family: Arial;
+  padding-bottom: 1000px;
 }
 P {
   margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 header {
@@ -50,13 +62,21 @@ header {
 .home-pic-description h1 {
   font-size: 55px;
   margin: 0;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.7s forwards;
 }
+
 .home-pic-description h3 {
   font-size: 27px;
   margin-bottom: 0;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.5s forwards;
 }
+
 .home-pic-description p {
   font-size: 16px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.9s forwards;
 }
 
 .explore {
@@ -73,6 +93,8 @@ header {
   padding: 8px;
   box-shadow: -3px 3px 3px rgba(247, 245, 245, 0.15);
   cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 1.1s forwards;
 }
 .explore-button:hover,
 .explore-button:focus-visible {
@@ -87,6 +109,7 @@ header {
 
 .top-collection {
   margin-left: 50px;
+  max-width: 280px;
 }
 .top-collection h5 {
   color: #0c552b;
@@ -94,7 +117,6 @@ header {
 }
 
 .top-collection h2 {
-  font-size: 27px;
   margin-top: 0;
 }
 
@@ -112,6 +134,7 @@ header {
 }
 .credentials {
   position: relative;
+  margin-bottom: 20px;
 }
 .credentials-details {
   position: absolute;
@@ -122,4 +145,37 @@ header {
   padding: 10px 20px;
   border: 1px solid #fff;
   border-radius: 3px;
+}
+
+.classic {
+  background-color: #f7f6f6;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.classic-collection {
+  max-width: 250px;
+  margin-left: 50px;
+}
+.classic-collection h5 {
+  color: #0c552b;
+  margin-bottom: 10px;
+}
+.classic-collection h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.classic-items-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+  gap: 40px;
+}
+
+.classic-items p {
+  max-width: 180px;
+  line-height: 16px;
+}
+.classic-items img {
+  width: 130px;
 }
