@@ -52,11 +52,11 @@ header {
   background-color: #1e663c;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-top: 20px;
   padding: 10px 50px;
-  gap: 20px;
+  gap: 50px;
 }
 .footer img {
   cursor: pointer;

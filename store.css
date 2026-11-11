@@ -57,3 +57,41 @@
 .explore-button:active {
   opacity: 0.6;
 }
+
+.search {
+  max-width: 500px;
+  margin-left: 65px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.search-bar {
+  height: 36px;
+  flex: 1;
+  width: 0;
+  border: 1px solid #cccbcb;
+  border-radius: 2px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+}
+
+.search-button,
+.search-button:focus-visible {
+  height: 40px;
+  width: 50px;
+  background-color: #faf6f6;
+  border: 1px solid #cccbcb;
+  border-radius: 2px;
+  margin-left: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
