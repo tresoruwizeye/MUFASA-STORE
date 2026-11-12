@@ -18,7 +18,7 @@
 }
 .home-pic-description {
   color: #fff;
-  max-width: 50%;
+  max-width: 600px;
   position: absolute;
   top: 50px;
   left: 50px;
@@ -95,14 +95,19 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+
 .credentials img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  max-height: auto;
+  aspect-ratio: 1 / 1;
   border-radius: 3px;
 }
 .credentials {
   position: relative;
   margin-bottom: 20px;
+  width: fit-content;
+  max-width: 100%;
 }
 .credentials-details {
   position: absolute;
@@ -115,12 +120,26 @@
   padding: 10px 20px;
   border: 1px solid #fff;
   border-radius: 3px;
+  width: fit-content;
+}
+
+@media (width<1100px) {
+  .credentials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width < 676px) {
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .classic {
   background-color: #ecebeb;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px 0;
 }
 .classic-collection {
@@ -138,6 +157,7 @@
 .classic-items-div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 50px;
   gap: 40px;
 }
@@ -153,10 +173,12 @@
 .location {
   margin: 20px 50px 0 50px;
   display: flex;
+  flex-wrap: wrap-reverse;
   gap: 50px;
 }
 .location img {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 250px;
 }
 .location-description h2 {
